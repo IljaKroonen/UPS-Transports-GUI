@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Ilja/Documents/NetBeansProjects/UPSTransports/src/iaws/ws/gui/MainFrame.java</file>
+            <file>file:/C:/Users/Ilja/Documents/NetBeansProjects/UPSTransports/src/iaws/ws/gui/LinesTableModel.java</file>
+            <file>file:/C:/Users/Ilja/Documents/NetBeansProjects/UPSTransports/src/iaws/ws/transports/LineType.java</file>
+            <file>file:/C:/Users/Ilja/Documents/NetBeansProjects/UPSTransports/src/iaws/ws/transports/RatedLineType.java</file>
+            <file>file:/C:/Users/Ilja/Documents/NetBeansProjects/UPSTransports/src/iaws/ws/gui/BikeStationsTableModel.java</file>
+            <file>file:/C:/Users/Ilja/Documents/NetBeansProjects/UPSTransports/src/iaws/ws/gui/StopPointsTableModel.java</file>
+            <file>file:/C:/Users/Ilja/Documents/NetBeansProjects/UPSTransports/src/iaws/ws/transports/StopTimeRequestType.java</file>
+            <file>file:/C:/Users/Ilja/Documents/NetBeansProjects/UPSTransports/src/iaws/ws/transports/BikeStationsRequestType.java</file>
+            <file>file:/C:/Users/Ilja/Documents/NetBeansProjects/UPSTransports/src/iaws/ws/transports/ObjectFactory.java</file>
+            <file>file:/C:/Users/Ilja/Documents/NetBeansProjects/UPSTransports/src/iaws/ws/transports/WSTransportService.java</file>
+            <file>file:/C:/Users/Ilja/Documents/NetBeansProjects/UPSTransports/src/iaws/ws/transports/WSTransport.java</file>
+            <file>file:/C:/Users/Ilja/Documents/NetBeansProjects/UPSTransports/src/iaws/ws/gui/StopPointsFrame.java</file>
+            <file>file:/C:/Users/Ilja/Documents/NetBeansProjects/UPSTransports/src/iaws/ws/transports/package-info.java</file>
+        </group>
+    </open-files>
+</project-private>
