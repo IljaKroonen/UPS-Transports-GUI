@@ -18,6 +18,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;attribute name="id" type="{http://www.w3.org/2001/XMLSchema}long" />
  *       &lt;attribute name="friendlyName" type="{http://www.w3.org/2001/XMLSchema}string" />
+ *       &lt;attribute name="direction" type="{http://www.w3.org/2001/XMLSchema}string" />
  *     &lt;/restriction>
  *   &lt;/complexContent>
  * &lt;/complexType>
@@ -33,6 +34,8 @@ public class StopPointType {
     protected Long id;
     @XmlAttribute(name = "friendlyName")
     protected String friendlyName;
+    @XmlAttribute(name = "direction")
+    protected String direction;
 
     /**
      * Obtient la valeur de la propriété id.
@@ -80,6 +83,30 @@ public class StopPointType {
      */
     public void setFriendlyName(String value) {
         this.friendlyName = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété direction.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getDirection() {
+        return direction;
+    }
+
+    /**
+     * Définit la valeur de la propriété direction.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setDirection(String value) {
+        this.direction = value;
     }
 
 }

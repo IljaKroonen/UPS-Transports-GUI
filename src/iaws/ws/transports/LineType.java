@@ -18,6 +18,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;attribute name="id" type="{http://www.w3.org/2001/XMLSchema}long" />
+ *       &lt;attribute name="shortName" type="{http://www.w3.org/2001/XMLSchema}string" />
  *       &lt;attribute name="friendlyName" type="{http://www.w3.org/2001/XMLSchema}string" />
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -35,6 +36,8 @@ public class LineType {
 
     @XmlAttribute(name = "id")
     protected Long id;
+    @XmlAttribute(name = "shortName")
+    protected String shortName;
     @XmlAttribute(name = "friendlyName")
     protected String friendlyName;
 
@@ -60,6 +63,30 @@ public class LineType {
      */
     public void setId(Long value) {
         this.id = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété shortName.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getShortName() {
+        return shortName;
+    }
+
+    /**
+     * Définit la valeur de la propriété shortName.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setShortName(String value) {
+        this.shortName = value;
     }
 
     /**

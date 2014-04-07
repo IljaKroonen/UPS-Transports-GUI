@@ -33,12 +33,12 @@ public class StopPointsTableModel implements TableModel {
 
     @Override
     public int getColumnCount() {
-        return 2;
+        return 3;
     }
 
     @Override
     public String getColumnName(int columnIndex) {
-        String[] columns = { "Id", "Nom" };
+        String[] columns = { "Id", "Nom", "Destination" };
         return columns[columnIndex];
     }
 
@@ -60,6 +60,8 @@ public class StopPointsTableModel implements TableModel {
                 return stopPoint.getId();
             case 1:
                 return stopPoint.getFriendlyName();
+            case 2:
+                return stopPoint.getDirection();
             default:
                 throw new UnsupportedOperationException("Illegal getValueAt()");
         }

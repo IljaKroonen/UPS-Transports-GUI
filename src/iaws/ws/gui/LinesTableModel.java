@@ -29,12 +29,12 @@ public class LinesTableModel implements TableModel {
 
     @Override
     public int getColumnCount() {
-        return 4;
+        return 5;
     }
 
     @Override
     public String getColumnName(int columnIndex) {
-        String[] columnNames = {"Identifiant", "Nom", "Likes", "Dislikes"};
+        String[] columnNames = {"Identifiant", "Nom", "Nom court", "Likes", "Dislikes"};
         return columnNames[columnIndex];
     }
 
@@ -57,8 +57,10 @@ public class LinesTableModel implements TableModel {
             case 1:
                 return ratedLine.getFriendlyName();
             case 2:
-                return ratedLine.getLikes();
+                return ratedLine.getShortName();
             case 3:
+                return ratedLine.getLikes();
+            case 4:
                 return ratedLine.getDislikes();
             default:
                 throw new UnsupportedOperationException("Invalid access");
