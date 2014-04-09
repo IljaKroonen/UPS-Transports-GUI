@@ -38,7 +38,7 @@ public class StopPointsTableModel implements TableModel {
 
     @Override
     public String getColumnName(int columnIndex) {
-        String[] columns = { "Id", "Nom", "Destination" };
+        String[] columns = { "Identifier", "Name", "Destination" };
         return columns[columnIndex];
     }
 

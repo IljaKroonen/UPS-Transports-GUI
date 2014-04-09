@@ -34,7 +34,7 @@ public class LinesTableModel implements TableModel {
 
     @Override
     public String getColumnName(int columnIndex) {
-        String[] columnNames = {"Identifiant", "Nom", "Nom court", "Likes", "Dislikes"};
+        String[] columnNames = {"Identifier", "Name", "Short name", "Likes", "Dislikes"};
         return columnNames[columnIndex];
     }
 

@@ -36,7 +36,7 @@ public class BikeStationsTableModel implements TableModel {
 
     @Override
     public String getColumnName(int columnIndex) {
-        String[] columns = {"Id", "Nom"};
+        String[] columns = {"Identifier", "Name"};
         return columns[columnIndex];
     }
 

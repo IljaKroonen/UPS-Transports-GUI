@@ -69,7 +69,7 @@ public class MainFrame extends javax.swing.JFrame {
         jTableLines.setModel(linesTableModel);
         jScrollPane1.setViewportView(jTableLines);
 
-        jButtonStops.setText("Passages");
+        jButtonStops.setText("Stops");
         jButtonStops.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonStopsActionPerformed(evt);
@@ -96,7 +96,7 @@ public class MainFrame extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 280, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 296, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jButtonStops, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -120,12 +120,12 @@ public class MainFrame extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jTabbedPane1.addTab("Lignes", jPanel1);
+        jTabbedPane1.addTab("Lines", jPanel1);
 
         jTableBikeStations.setModel(bikeStationsTableModel);
         jScrollPane2.setViewportView(jTableBikeStations);
 
-        jButtonAvailable.setText("Disponibilités");
+        jButtonAvailable.setText("Available bikes");
         jButtonAvailable.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonAvailableActionPerformed(evt);
@@ -155,7 +155,7 @@ public class MainFrame extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jTabbedPane1.addTab("Disponibilités vélos", jPanel2);
+        jTabbedPane1.addTab("Available bikes", jPanel2);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -208,7 +208,7 @@ public class MainFrame extends javax.swing.JFrame {
         AvailableBikesRequestType req = new AvailableBikesRequestType();
         req.setStation(bikeStation);
         long availableBikes = service.availableBikes(req).getAvailableBikes();
-        JOptionPane.showMessageDialog(this, availableBikes + " vélos disponibles");
+        JOptionPane.showMessageDialog(this, availableBikes + " available bikes");
     }//GEN-LAST:event_jButtonAvailableActionPerformed
 
     private void jButtonStopsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonStopsActionPerformed

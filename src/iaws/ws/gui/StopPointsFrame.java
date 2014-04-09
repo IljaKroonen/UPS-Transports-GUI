@@ -60,7 +60,7 @@ public class StopPointsFrame extends javax.swing.JFrame {
         jTableStopPoints.setModel(stopPointsTableModel);
         jScrollPane1.setViewportView(jTableStopPoints);
 
-        jButtonNextStop.setText("Prochain passage");
+        jButtonNextStop.setText("Next stop");
         jButtonNextStop.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonNextStopActionPerformed(evt);
@@ -73,7 +73,7 @@ public class StopPointsFrame extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 259, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 297, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
                 .addComponent(jButtonNextStop))
         );
@@ -114,7 +114,7 @@ public class StopPointsFrame extends javax.swing.JFrame {
         }
         String msg;
         if (xmlDateTime == null) {
-            msg = "Pas de passage dans un avenir proche";
+            msg = "No imminent stop at this stop point";
         } else {
             Date date = xmlDateTime.toGregorianCalendar().getTime();
             msg = date.toString();

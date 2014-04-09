@@ -22,7 +22,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jScrollPane1" pref="259" max="32767" attributes="0"/>
+              <Component id="jScrollPane1" pref="297" max="32767" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="jButtonNextStop" min="-2" max="-2" attributes="0"/>
           </Group>
@@ -69,7 +69,7 @@
     </Container>
     <Component class="javax.swing.JButton" name="jButtonNextStop">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Prochain passage"/>
+        <Property name="text" type="java.lang.String" value="Next stop"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonNextStopActionPerformed"/>

@@ -26,28 +26,6 @@ public interface WSTransport {
 
     /**
      * 
-     * @param availableBikesRequest
-     * @return
-     *     returns iaws.ws.transports.AvailableBikesResponseType
-     */
-    @WebMethod(operationName = "AvailableBikes")
-    @WebResult(name = "AvailableBikesResponse", targetNamespace = "http://iaws/ws/transports", partName = "AvailableBikesResponse")
-    public AvailableBikesResponseType availableBikes(
-        @WebParam(name = "AvailableBikesRequest", targetNamespace = "http://iaws/ws/transports", partName = "AvailableBikesRequest")
-        AvailableBikesRequestType availableBikesRequest);
-
-    /**
-     * 
-     * @param rateRequest
-     */
-    @WebMethod(operationName = "Rate")
-    @Oneway
-    public void rate(
-        @WebParam(name = "RateRequest", targetNamespace = "http://iaws/ws/transports", partName = "RateRequest")
-        RateRequestType rateRequest);
-
-    /**
-     * 
      * @param bikeStationsRequest
      * @return
      *     returns iaws.ws.transports.BikeStationsResponseType
@@ -60,15 +38,13 @@ public interface WSTransport {
 
     /**
      * 
-     * @param stopPointsRequest
-     * @return
-     *     returns iaws.ws.transports.StopPointsResponseType
+     * @param rateRequest
      */
-    @WebMethod(operationName = "StopPoints")
-    @WebResult(name = "StopPointsResponse", targetNamespace = "http://iaws/ws/transports", partName = "StopPointsResponse")
-    public StopPointsResponseType stopPoints(
-        @WebParam(name = "StopPointsRequest", targetNamespace = "http://iaws/ws/transports", partName = "StopPointsRequest")
-        StopPointsRequestType stopPointsRequest);
+    @WebMethod(operationName = "Rate")
+    @Oneway
+    public void rate(
+        @WebParam(name = "RateRequest", targetNamespace = "http://iaws/ws/transports", partName = "RateRequest")
+        RateRequestType rateRequest);
 
     /**
      * 
@@ -93,5 +69,29 @@ public interface WSTransport {
     public StopTimeResponseType stopTime(
         @WebParam(name = "StopTimeRequest", targetNamespace = "http://iaws/ws/transports", partName = "StopTimeRequest")
         StopTimeRequestType stopTimeRequest);
+
+    /**
+     * 
+     * @param stopPointsRequest
+     * @return
+     *     returns iaws.ws.transports.StopPointsResponseType
+     */
+    @WebMethod(operationName = "StopPoints")
+    @WebResult(name = "StopPointsResponse", targetNamespace = "http://iaws/ws/transports", partName = "StopPointsResponse")
+    public StopPointsResponseType stopPoints(
+        @WebParam(name = "StopPointsRequest", targetNamespace = "http://iaws/ws/transports", partName = "StopPointsRequest")
+        StopPointsRequestType stopPointsRequest);
+
+    /**
+     * 
+     * @param availableBikesRequest
+     * @return
+     *     returns iaws.ws.transports.AvailableBikesResponseType
+     */
+    @WebMethod(operationName = "AvailableBikes")
+    @WebResult(name = "AvailableBikesResponse", targetNamespace = "http://iaws/ws/transports", partName = "AvailableBikesResponse")
+    public AvailableBikesResponseType availableBikes(
+        @WebParam(name = "AvailableBikesRequest", targetNamespace = "http://iaws/ws/transports", partName = "AvailableBikesRequest")
+        AvailableBikesRequestType availableBikesRequest);
 
 }
